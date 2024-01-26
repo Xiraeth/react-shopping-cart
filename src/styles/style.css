@@ -1,0 +1,134 @@
+@import "header.css";
+@import "products.css";
+@import "home.css";
+@import "cart.css";
+
+:root {
+  font-size: 16px;
+  --bg-color: rgb(52, 53, 62);
+}
+
+body {
+  min-height: 90vh;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .productDetailView {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pdLeftSide > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pdRightSide {
+    font-size: 0.8rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .productPanel {
+    width: 200px;
+  }
+
+  .cartDivContainer {
+    width: 300px;
+    transition: width 0.3s;
+  }
+
+  .productPanel img {
+    width: 200px;
+    height: 170px;
+  }
+
+  .cartItemPanel {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cartItemPanel > img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cartItemPanel > h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .buttonation {
+    flex-direction: column;
+  }
+
+  .pdRightSide > div:first-child {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .pdLeftSide > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .headerNav {
+    flex-direction: column;
+    min-height: 175px;
+    padding: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+  }
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .links a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .productDetailsDescription {
+    width: 40ch;
+    text-align: center;
+    margin: auto;
+  }
+
+  .pdRightSide > div:first-child {
+    font-size: 0.6rem;
+  }
+
+  .pdRightSide > div:first-child > h3 {
+    font-size: 3em;
+  }
+
+  .homeText,
+  .apiCredit,
+  .homeSubtext {
+    font-size: 1rem;
+  }
+}

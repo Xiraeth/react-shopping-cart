@@ -1,0 +1,26 @@
+.homeText {
+  color: rgb(0, 255, 127);
+  font-style: italic;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(50, 250, 50, 0.8);
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.apiCredit {
+  color: springgreen;
+  padding: 10px;
+  font-style: italic;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(50, 250, 50, 0.4);
+  text-align: center;
+}
+
+.apiCredit > a {
+  color: rgb(100, 255, 195);
+  transition: color 0.15s;
+}
+
+.apiCredit > a:hover {
+  color: tomato;
+}

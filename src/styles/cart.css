@@ -1,0 +1,156 @@
+.cartMessage {
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  opacity: 0.8;
+  color: coral;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartDivContainer {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid springgreen;
+  border-radius: 10px;
+  padding: 20px 0;
+  box-sizing: inherit;
+}
+
+.cartItemPanel:last-of-type {
+  border-bottom: none;
+}
+
+.cartItemPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px double springgreen;
+  padding: 30px;
+}
+
+.cartItemPanel > div {
+  display: flex;
+}
+
+.cartItemPanel > img {
+  height: 200px;
+  text-align: center;
+  width: 250px;
+}
+
+.cartItemPanel > h3 {
+  width: 25ch;
+}
+
+.cartItemPanel > div {
+  font-size: 1.5em;
+}
+
+.cartItemQuantityContainer {
+  display: flex;
+  align-items: center;
+}
+
+.cartItemQuantityContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cartItemQuantityContainer > div > button:first-child {
+  margin-left: 10px;
+}
+
+.cartItemQuantityContainer > div > button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 100%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.cartItemQuantityContainer > div > button:hover {
+  background-color: white;
+  color: var(--bg-color);
+}
+
+.cartItemQuantityContainer > div > button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.fa-trash-can {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: crimson;
+  cursor: pointer;
+  margin-left: 2rem;
+  transition: color 0.15s;
+}
+
+.fa-trash-can:hover {
+  color: red;
+}
+
+.checkoutButtonsContainer {
+  width: 80%;
+  margin: 20px auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkoutButtonsContainer > button {
+  padding: 5px 15px;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s;
+}
+
+.checkoutButtonsContainer > button:hover {
+  opacity: 0.7;
+}
+
+.checkoutButtonsContainer > button:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.checkoutButton {
+  background-color: transparent;
+  color: springgreen;
+}
+
+.checkoutButton:hover {
+  background-color: springgreen;
+  color: black;
+}
+
+.clearCartButton {
+  background-color: transparent;
+  color: coral;
+}
+
+.clearCartButton:hover {
+  background-color: coral;
+  color: black;
+}
